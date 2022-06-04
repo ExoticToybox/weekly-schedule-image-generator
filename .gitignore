@@ -2,6 +2,9 @@
 .cdk.staging
 cdk.out
 
+# history
+.history
+
 # Logs
 logs
 *.log
