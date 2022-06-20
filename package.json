@@ -8,7 +8,8 @@
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
-    "cdk": "cdk"
+    "cdk": "cdk",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@types/jest": "^27.5.0",
@@ -18,7 +19,8 @@
     "jest": "^27.5.1",
     "ts-jest": "^27.1.4",
     "ts-node": "^10.7.0",
-    "typescript": "~3.9.7"
+    "typescript": "~3.9.7",
+    "husky": "^7.0.0"
   },
   "dependencies": {
     "@aws-cdk/aws-cloudfront": "^1.159.0",
@@ -26,6 +28,14 @@
     "@aws-cdk/aws-s3-deployment": "^1.159.0",
     "aws-cdk-lib": "2.27.0",
     "constructs": "^10.0.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.2",
     "source-map-support": "^0.5.21"
+  },
+  "lint-staged": {
+    "web/*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   }
 }
