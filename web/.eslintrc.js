@@ -25,8 +25,9 @@ module.exports = {
     tsconfigRootDir: __dirname,
     project: ['./tsconfig.json'],
   },
-  plugins: ['react', '@typescript-eslint'],
+  plugins: ['react', '@typescript-eslint', 'import-access'],
   rules: {
+    'import-access/jsdoc': ['error'],
     'import/extensions': [
       'error',
       {
