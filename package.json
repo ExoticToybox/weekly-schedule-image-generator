@@ -5,6 +5,7 @@
     "weekly-schedule-image-generator": "bin/weekly-schedule-image-generator.js"
   },
   "scripts": {
+    "lint-staged": "lint-staged",
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
@@ -33,7 +34,7 @@
     "source-map-support": "^0.5.21"
   },
   "lint-staged": {
-    "web/*.{js,jsx,ts,tsx}": [
+    "web/**/*.{js,jsx,ts,tsx}": [
       "eslint --fix",
       "prettier --write"
     ]
