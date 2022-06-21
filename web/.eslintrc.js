@@ -38,6 +38,8 @@ module.exports = {
         tsx: 'never',
       },
     ],
+    'import/no-default-export': 'error',
+    'import/prefer-default-export': 'off',
     'import/order': [
       'error',
       {
